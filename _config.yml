@@ -52,36 +52,36 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "moj.hashemian@gmail.com"
-  # facebook: deanattali
   github: mojgan1987
   twitter: mojgan1987
+  linkedin: mojgan-hashemian
+  google-scholar: citations?hl=en&user=w-FEjmgAAAAJ&hl=en&oi=ao
   # patreon: DeanAttali
   # youtube: "@MojganH"
   # whatsapp: 15551212
-# medium: mojgan1987
-#  reddit: yourname or r/yoursubreddit
-linkedin: mojgan-hashemian
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  bluesky: yourname
-#  ORCID: your ORCID ID
-google-scholar: citations?hl=en&user=w-FEjmgAAAAJ&hl=en&oi=ao
-#  discord: "invite_code" or "users/userid" or "invite/invite_code"
-# kaggle: mojganhashemian
-#  hackerrank: yourname
-#  gitlab: yourname
-#  itchio: yourname
-#  untappd: yourname
+  # facebook: deanattali
+  # medium: mojgan1987
+  #  reddit: yourname or r/yoursubreddit
+  #  xing: yourname
+  #  stackoverflow: "3943160/daattali"
+  #  snapchat: deanat78
+  #  instagram: deanat78
+  #  spotify: yourname
+  #  telephone: +14159998888
+  #  steam: deanat78
+  #  twitch: yourname
+  #  yelp: yourname
+  #  telegram: yourname
+  #  calendly: yourname
+  #  mastodon: instance.url/@username
+  #  bluesky: yourname
+  #  ORCID: your ORCID ID
+  #  discord: "invite_code" or "users/userid" or "invite/invite_code"
+  # kaggle: mojganhashemian
+  #  hackerrank: yourname
+  #  gitlab: yourname
+  #  itchio: yourname
+  #  untappd: yourname
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
