@@ -1,14 +1,14 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: More about me
 ---
 
-My name is Mojgan Hashemian. I have the following qualities:
+My name is Mojgan Hashemian. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- I am a senior data scientist at directline group.
+- I am an independent researcher. 
 
-What else do you need?
+Thanks.
 
 
