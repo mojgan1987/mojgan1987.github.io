@@ -1,6 +1,6 @@
 ---
 layout: page
-title: publications
+title: Publications
 ---
 <p align="justify">
 Please see the updated list of my papers on <a href="https://scholar.google.com/citations?hl=en&user=w-FEjmgAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>. 
