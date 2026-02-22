@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dr. Mojgan Hashemian, Senior Data Scientist. Machine Learning in production, reliable ML systems, explainability, monitoring, and responsible AI." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Dr. Mojgan Hashemian | Senior Data Scientist" />
+  <meta property="og:description" content="Machine Learning in production, reliable ML systems, explainability, monitoring, and responsible AI." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Dr. Mojgan Hashemian | Senior Data Scientist</title>
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#111a2e;
+      --text:#e6eaf2;
+      --muted:#b8c1d9;
+      --soft:#9aa6c7;
+      --line:rgba(255,255,255,.10);
+      --accent:#7aa2ff;
+      --accent2:#6ee7b7;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --max: 980px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(900px 600px at 20% -10%, rgba(122,162,255,.20), transparent 60%),
+        radial-gradient(900px 600px at 90% 10%, rgba(110,231,183,.12), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .skip{
+      position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;
+    }
+    .skip:focus{
+      left:16px; top:16px; width:auto; height:auto; padding:10px 12px;
+      background:var(--panel); border:1px solid var(--line); border-radius:12px;
+      z-index:9999;
+    }
+    header{
+      position:sticky; top:0;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,.65);
+      border-bottom:1px solid var(--line);
+      z-index:50;
+    }
+    .navwrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      min-width: 220px;
+    }
+    .dot{
+      width:12px; height:12px; border-radius:999px;
+      background: linear-gradient(120deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 4px rgba(122,162,255,.15);
+    }
+    .brand .name{
+      font-weight:700;
+      letter-spacing:.2px;
+      white-space:nowrap;
+    }
+    nav{
+      display:flex; flex-wrap:wrap; gap:10px 14px;
+      justify-content:flex-end;
+    }
+    nav a{
+      color:var(--muted);
+      font-size:14px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid transparent;
+    }
+    nav a:hover{
+      color:var(--text);
+      border-color:var(--line);
+      text-decoration:none;
+      background: rgba(255,255,255,.04);
+    }
+    main{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:26px 18px 60px;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap:18px;
+      align-items:stretch;
+      margin-top:12px;
+    }
+    @media (max-width: 860px){
+      .hero{grid-template-columns:1fr}
+      .brand{min-width:auto}
+    }
+    .card{
+      background: rgba(17,26,46,.80);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:18px 18px;
+    }
+    .hero h1{
+      margin:0 0 6px 0;
+      font-size:34px;
+      line-height:1.15;
+      letter-spacing:.2px;
+    }
+    .subtitle{
+      margin:0 0 10px 0;
+      color:var(--muted);
+      font-size:16px;
+    }
+    .meta{
+      display:flex; flex-wrap:wrap; gap:8px 10px;
+      margin-top:10px;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      font-size:13px;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .pill strong{color:var(--text); font-weight:600}
+    .actions{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top:14px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color:var(--text);
+      font-size:14px;
+      font-weight:600;
+      text-decoration:none;
+    }
+    .btn:hover{
+      background: rgba(255,255,255,.07);
+      text-decoration:none;
+    }
+    .btn.primary{
+      border-color: rgba(122,162,255,.35);
+      background: linear-gradient(120deg, rgba(122,162,255,.18), rgba(110,231,183,.10));
+    }
+    .section{
+      margin-top:18px;
+    }
+    .section h2{
+      margin:0 0 10px 0;
+      font-size:20px;
+      letter-spacing:.2px;
+    }
+    .grid2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    @media (max-width: 860px){
+      .grid2{grid-template-columns:1fr}
+    }
+    .muted{color:var(--muted)}
+    .small{font-size:14px; color:var(--muted)}
+    ul{margin:10px 0 0 18px; padding:0}
+    li{margin:6px 0}
+    .kpi{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:10px;
+      margin-top:10px;
+    }
+    @media (max-width: 520px){
+      .kpi{grid-template-columns:1fr}
+    }
+    .kpi .item{
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px;
+      background: rgba(255,255,255,.03);
+    }
+    .kpi .item .label{color:var(--soft); font-size:13px; margin-bottom:4px}
+    .kpi .item .value{font-weight:700}
+    .timeline .role{
+      display:flex; justify-content:space-between; gap:12px;
+      flex-wrap:wrap;
+      border-top:1px solid var(--line);
+      padding-top:12px;
+      margin-top:12px;
+    }
+    .timeline .role:first-child{
+      border-top:none;
+      padding-top:0;
+      margin-top:0;
+    }
+    .role h3{
+      margin:0; font-size:16px;
+    }
+    .role .when{
+      color:var(--muted);
+      font-size:13px;
+      white-space:nowrap;
+    }
+    .role .org{
+      color:var(--muted);
+      font-size:14px;
+      margin-top:2px;
+    }
+    .twocol{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    @media (max-width: 860px){
+      .twocol{grid-template-columns:1fr}
+    }
+    footer{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:18px 18px 40px;
+      color:var(--muted);
+      font-size:13px;
+      border-top:1px solid var(--line);
+    }
+    .toplink{
+      float:right;
+      color:var(--muted);
+    }
+    .toplink:hover{color:var(--text); text-decoration:none}
+    .note{
+      margin-top:10px;
+      padding:12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color:var(--muted);
+      font-size:14px;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header>
+    <div class="navwrap">
+      <div class="brand" aria-label="Site identity">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="name">Dr. Mojgan Hashemian</span>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#profile">Profile</a>
+        <a href="#approach">Approach</a>
+        <a href="#governance">Governance</a>
+        <a href="#experience">Experience</a>
+        <a href="#speaking">Speaking</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" id="profile">
+      <div class="card">
+        <h1>Senior Data Scientist</h1>
+        <p class="subtitle">Machine Learning in production, reliable ML systems, explainability, monitoring, and responsible AI.</p>
+
+        <div class="meta" role="list" aria-label="Quick facts">
+          <span class="pill" role="listitem"><strong>Location:</strong> Leeds, United Kingdom</span>
+          <span class="pill" role="listitem"><strong>Focus:</strong> Deployable and interpretable ML</span>
+          <span class="pill" role="listitem"><strong>Background:</strong> Industry and academic research</span>
+        </div>
+
+        <div class="actions" aria-label="External links">
+          <a class="btn primary" href="https://www.linkedin.com/in/mojgan-hashemian/" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn" href="https://www.mojgan-hashemian.com" rel="noopener noreferrer">Website</a>
+        </div>
+
+        <p class="note">
+          For contact, prefer LinkedIn or a website contact form.
+        </p>
+      </div>
+
+      <div class="card" aria-label="Impact highlights">
+        <h2 style="margin-top:0">Impact Highlights</h2>
+        <div class="kpi">
+          <div class="item">
+            <div class="label">Production delivery</div>
+            <div class="value">Deployed ML systems used in commercial decision-making</div>
+          </div>
+          <div class="item">
+            <div class="label">Measured uplift</div>
+            <div class="value">10% prediction improvement via optimisation</div>
+          </div>
+          <div class="item">
+            <div class="label">Monitoring</div>
+            <div class="value">Shift detection and degradation prevention</div>
+          </div>
+          <div class="item">
+            <div class="label">Research track record</div>
+            <div class="value">10+ peer-reviewed scientific papers</div>
+          </div>
+        </div>
+        <p class="small" style="margin-top:12px">
+          Highlights are based on her professional CV content. :contentReference[oaicite:0]{index=0}
+        </p>
+      </div>
+    </section>
+
+    <section class="section grid2" id="about">
+      <div class="card">
+        <h2>Profile</h2>
+        <p class="muted">
+          I am a Senior Data Scientist with over ten years of experience spanning academic research and industry practice.
+          I specialise in designing, deploying, and monitoring machine learning systems that operate reliably in real-world environments.
+        </p>
+        <p class="muted">
+          My work combines statistical rigour, practical engineering, and clear communication.
+          I focus on systems that are not only accurate, but interpretable, robust, and aligned with organisational goals.
+        </p>
+        <p class="muted">
+          I have worked across insurance, financial services, automotive research, human-centred AI systems, and intelligent games.
+        </p>
+      </div>
+
+      <div class="card" id="skills">
+        <h2>Technical Expertise</h2>
+        <div class="twocol">
+          <div>
+            <p class="small" style="margin:0 0 6px 0"><strong>Machine Learning and AI</strong></p>
+            <ul>
+              <li>Regression, classification, clustering, ranking models</li>
+              <li>Deep learning (CNN, RNN, LSTM, BiLSTM)</li>
+              <li>Uncertainty modelling and evidential deep learning</li>
+              <li>Experimental design and A/B testing</li>
+              <li>Federated learning (research prototyping)</li>
+            </ul>
+          </div>
+          <div>
+            <p class="small" style="margin:0 0 6px 0"><strong>Data and Engineering</strong></p>
+            <ul>
+              <li>Python (NumPy, Pandas, SciPy, Scikit-learn, TensorFlow, Keras)</li>
+              <li>Distributed computing (Dask, Spark)</li>
+              <li>SQL (MySQL, PostgreSQL)</li>
+              <li>Visualisation (Matplotlib, Plotly, Tableau)</li>
+              <li>Version control and collaboration (Git)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="approach">
+      <div class="card">
+        <h2>Approach to Building Reliable ML Systems</h2>
+        <p class="muted">
+          I treat machine learning as a lifecycle, not a modelling exercise. My approach is structured and repeatable:
+        </p>
+        <ul>
+          <li><strong>Problem framing:</strong> clarify decision context, define measurable objectives, align on success criteria.</li>
+          <li><strong>Data understanding:</strong> assess quality, representativeness, bias, and leakage risks early.</li>
+          <li><strong>Model design:</strong> balance performance with interpretability and stability from the start.</li>
+          <li><strong>Robust evaluation:</strong> go beyond accuracy, including stability under shift and calibration where relevant.</li>
+          <li><strong>Production and monitoring:</strong> implement monitoring for drift, anomalies, and silent degradation.</li>
+          <li><strong>Documentation:</strong> record assumptions, limitations, and operational guidance for maintainability.</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="section" id="experience">
+      <div class="card timeline">
+        <h2>Experience</h2>
+
+        <div class="role">
+          <div>
+            <h3>Senior Data Scientist</h3>
+            <div class="org">Direct Line Group</div>
+            <ul>
+              <li>Led end-to-end development of production machine learning systems.</li>
+              <li>Delivered interpretable forecasting models to support planning and decision-making.</li>
+              <li>Designed monitoring frameworks to detect drift and performance degradation.</li>
+              <li>Used distributed computing tools to handle large-scale datasets efficiently.</li>
+              <li>Mentored junior data scientists and promoted data literacy initiatives.</li>
+            </ul>
+          </div>
+          <div class="when">2023 – Present</div>
+        </div>
+
+        <div class="role">
+          <div>
+            <h3>Research Assistant</h3>
+            <div class="org">University of Bradford</div>
+            <ul>
+              <li>Applied advanced machine learning and uncertainty modelling in automotive research.</li>
+              <li>Investigated evidential deep learning approaches for battery-related applications.</li>
+              <li>Contributed to research publications and technical reporting in multidisciplinary teams.</li>
+            </ul>
+          </div>
+          <div class="when">2023</div>
+        </div>
+
+        <div class="role">
+          <div>
+            <h3>Data Scientist</h3>
+            <div class="org">Caspian</div>
+            <ul>
+              <li>Improved predictive model performance by 10% using feature engineering and optimisation.</li>
+              <li>Built monitoring tools to detect distributional shifts in deployed systems.</li>
+              <li>Delivered analytical reporting to senior stakeholders in global banking.</li>
+              <li>Worked across the full lifecycle from research to deployment.</li>
+              <li>Prototyped federated learning, explainability, and intelligent labelling approaches.</li>
+            </ul>
+          </div>
+          <div class="when">2021 – 2023</div>
+        </div>
+
+        <div class="role">
+          <div>
+            <h3>Lecturer</h3>
+            <div class="org">University of Hull</div>
+            <ul>
+              <li>Delivered postgraduate teaching in data analysis and machine learning.</li>
+              <li>Taught supervised and unsupervised learning, time series modelling, and deep learning.</li>
+              <li>Achieved Associate Fellow status with the Higher Education Academy.</li>
+            </ul>
+          </div>
+          <div class="when">2020 – 2021</div>
+        </div>
+
+        <div class="role">
+          <div>
+            <h3>Researcher</h3>
+            <div class="org">INESC-ID, Lisbon</div>
+            <ul>
+              <li>Published and presented 10+ peer-reviewed papers.</li>
+              <li>Contributed to European H2020 projects (RAGE, AMIGOS).</li>
+              <li>Designed intelligent games experiments with 150+ users.</li>
+              <li>Developed and evaluated social robotics experiments with 230+ participants.</li>
+              <li>Applied statistical analysis methods including ANCOVA and GEE.</li>
+            </ul>
+          </div>
+          <div class="when">2015 – 2020</div>
+        </div>
+
+        <div class="role">
+          <div>
+            <h3>Early Career</h3>
+            <div class="org">Java Developer (FANAP) and Research Assistant (University of Tehran)</div>
+            <ul>
+              <li>Contributed to enterprise software development and research projects.</li>
+              <li>Built an intelligent mood detection model reaching 91% accuracy using Random Forest.</li>
+              <li>Mentored MSc students during research work.</li>
+            </ul>
+          </div>
+          <div class="when">2011 – 2015</div>
+        </div>
+
+        <p class="small" style="margin-top:12px">
+          Experience summary adapted for public website use from the CV content. :contentReference[oaicite:1]{index=1}
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="speaking">
+      <div class="card">
+        <h2>Speaking &amp; Teaching</h2>
+        <p class="muted">
+          I have taught and supported postgraduate students in data analysis and machine learning, with an emphasis on practical implementation,
+          conceptual clarity, and responsible use of models.
+        </p>
+        <ul>
+          <li>Supervised and unsupervised learning foundations</li>
+          <li>Deep learning for time series (CNN, RNN, LSTM)</li>
+          <li>Data visualisation and exploratory analysis</li>
+          <li>Experimental design and evaluation</li>
+          <li>Communicating model behaviour, limitations, and risk to diverse audiences</li>
+        </ul>
+        <p class="muted">
+          I have also presented research at international venues and collaborated across multidisciplinary teams.
+        </p>
+        <ul>
+      <li>
+        <strong>AAMAS</strong> – International Conference on Autonomous Agents and Multiagent Systems
+      </li>
+      <li>
+        <strong>ACII</strong> – International Conference on Affective Computing and Intelligent Interaction
+      </li>
+      <li>
+        European H2020 project dissemination workshops (RAGE, AMIGOS)
+      </li>
+      <li>
+        Research seminars and technical workshops in AI and intelligent systems
+      </li>
+    </ul>
+      </div>
+    </section>
+
+    <section class="section grid2" id="projects">
+      <div class="card">
+        <h2>Selected Projects</h2>
+        <ul>
+          <li><strong>SMILE (interpretability):</strong> robust model-agnostic explainability, designed to improve stability over standard local explanations.</li>
+          <li><strong>Recommender systems:</strong> session-based ranking models (LightGBM, CatBoost) with strong benchmark performance.</li>
+          <li><strong>Wind forecasting:</strong> BiLSTM time series modelling for renewable energy prediction.</li>
+          <li><strong>NLP topic extraction:</strong> topic modelling and summarisation pipelines for research corpora.</li>
+          <li><strong>Healthcare prediction:</strong> ensemble models with strong AUROC performance.</li>
+        </ul>
+      </div>
+
+      <div class="card" id="education">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>PhD in Computer Science and Engineering (Distinction)</strong>, Instituto Superior Técnico</li>
+          <li><strong>MSc in Artificial Intelligence and Robotics</strong>, University of Tehran</li>
+          <li><strong>BSc in Computer Engineering</strong>, Iran University of Science and Technology</li>
+        </ul>
+
+        <h2 style="margin-top:14px">Awards</h2>
+        <ul>
+          <li>ACM Student Travel Grant (AAMAS 2019)</li>
+          <li>Student Travel Grant (ACII 2019)</li>
+          <li>H2020 Fellowship (RAGE Project)</li>
+          <li>Top national ranks in competitive university entrance examinations</li>
+        </ul>
+
+        <h2 style="margin-top:14px">Memberships</h2>
+        <ul>
+          <li>IEEE Member</li>
+          <li>ACM Professional Member</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <a class="toplink" href="#content">Back to top</a>
+    <div>
+      © <span id="y"></span> Dr. Mojgan Hashemian. Content adapted from CV for public website use. :contentReference[oaicite:2]{index=2}
+    </div>
+    <div class="small" style="margin-top:8px">
+      My CV.
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
