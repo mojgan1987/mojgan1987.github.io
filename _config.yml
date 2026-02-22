@@ -22,6 +22,7 @@ author: Mojgan Hashemian
 navbar-links:
   About Me: "aboutme"
   Publications: "publications"
+  CV: "cv/"
   Projects: "Projects"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
@@ -101,7 +102,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "Home"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
